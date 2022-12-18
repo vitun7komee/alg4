@@ -2,13 +2,10 @@
 #include<iostream>
 #include<string>
 double min(double x, double y) {
-    
-    if (x > y) {
+    if (x > y) 
         return y;
-    }
-    else {
+    else 
         return x;
-    }
 }
 int main() {
 
@@ -22,7 +19,7 @@ int main() {
         for (int i = 1; i < boards.length(); i++)
         {
 
-            c[i] = 10000;
+            c[i] = INFINITY;
             if (boards[i] == '.') {
                 c[i] = c[i - 1];
             }
